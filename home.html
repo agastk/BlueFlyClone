@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masai Project Home Page</title>
+
+    <style>
+        /* Navbar CSS Starting */
+        
+        .div {
+            background-color: white;
+            width: 100%;
+            height: 40px;
+        }
+        /* .div-1 {
+            padding: 0px 0xp 0xp 0xp;
+        } */
+        
+        #txt-clr {
+            color: red;
+        }
+        
+        .nav-ul {
+            overflow: auto;
+        }
+        
+        .nav-list {
+            float: left;
+            margin: 12px 24px;
+            list-style: none;
+            padding-top: 10px;
+        }
+        
+        .nav-text {
+            padding: 3px 3px;
+            text-decoration: none;
+            font-size: 13px;
+            font-family: Futura, sans-serif;
+            color: black;
+        }
+        
+        .nav-2-li {
+            float: right;
+            margin: 12px 16px;
+            list-style: none;
+        }
+        
+        #icon {
+            padding: 0px 310px;
+        }
+        /* Navbar CSS ending */
+        /* First full screen img */
+        
+        .div-1 {
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: 13px;
+            width: 100%;
+            height: 40px;
+            padding-top: 2px;
+            margin-top: 20px;
+        }
+        /* .div-img {
+            width: 1939px;
+            height: 240px;
+        } */
+        /* First full screen img ending */
+        
+        .div-text {
+            width: 90%;
+            height: 30px;
+            margin-bottom: 10px;
+        }
+        /* paragrap text for blufly */
+        
+        .h-txt {
+            text-align: center;
+            padding-left: 234px;
+            font-size: 20.8px;
+            font-family: sans-serif;
+            font-weight: 400;
+            margin-top: 23px;
+            /* margin-bottom: 30px; */
+        }
+        /* underline */
+        
+        .line {
+            margin-top: 46px;
+            width: 99%;
+        }
+        /* div-4 heading style */
+        
+        .div-4-heading {
+            text-align: center;
+            font-size: 32.68px;
+            font-family: serif;
+            font-weight: 400;
+            letter-spacing: 0;
+            line-height: 1;
+            text-transform: uppercase;
+            padding-left: 182px;
+        }
+        /* Shoping type with 10 img */
+        
+        .div-5-shoping {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            width: 100%;
+            margin-top: 40px;
+            margin-left: 40px;
+        }
+        
+        .category {
+            width: 259.59px;
+            height: 259.59px;
+            margin-right: 15px;
+            /* width: 100%; */
+            /* border: 1px solid black; */
+            /* flex: 1; */
+            /* background-color: blue; */
+            margin-bottom: 84px;
+        }
+        
+        .din-5-img {
+            width: 99%;
+            height: 87%;
+            /* border: 1px solid black; */
+            /* background-color: cadetblue; */
+        }
+        
+        .div-5-img1 {
+            width: 99.3%;
+            height: 99%;
+        }
+        
+        .div-5-txt {
+            text-align: center;
+            margin-top: 12px;
+            color: black;
+            font-family: sans-serif;
+        }
+        /* New thing with 3 image */
+        
+        .div-6 {
+            width: 100%;
+            height: 783px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .bg-img {
+            width: 451px;
+            height: 99%;
+            margin-left: 10px;
+            padding-left: 10px;
+            /* border: 1px solid red; */
+        }
+        
+        #bg-1 {
+            background-image: url(//cdn.shopify.com/s/files/1/0248/3473/6191/files/Dresses_d9649021-bd86-44f6-b36f-ab83fa227028_300x.jpg?v=1615206993);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        #bg-2 {
+            background-image: url(//cdn.shopify.com/s/files/1/0248/3473/6191/files/Mens_e3d64b92-4a9f-492a-8684-e251b08bdf93_300x.jpg?v=1630507934);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        #bg-3 {
+            background-image: url(//cdn.shopify.com/s/files/1/0248/3473/6191/files/womens_tops_2_300x.jpg?v=1630508297);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .new-link {
+            text-align: center;
+            border: 1pxsolid rgb(223, 14, 14);
+        }
+        
+        .div-new-txt {
+            display: block;
+            text-align: center;
+        }
+        
+        #link-1 {
+            border: 1px solid #e8e8e1;
+            display: inline-block;
+            margin-left: 670px;
+        }
+        
+        #p {
+            margin-top: -10px;
+        }
+        
+        .div-5-img2 {
+            width: 79.3%;
+            height: 99%;
+            padding-left: 40px;
+        }
+        /* 2nd big image CSS */
+        
+        .div-6-img-2 {
+            margin-top: 71px;
+        }
+        
+        .div-7-img3 {
+            margin-bottom: 84px;
+        }
+        
+        #link-2 {
+            color: white;
+            background-color: black;
+            margin-top: 20px;
+            display: block;
+            border: 1px solid black;
+            font-size: 17px;
+            margin-left: 653px;
+            float: left;
+            margin-bottom: 26px;
+        }
+        
+        .bg-img-1 {
+            width: 450.66px;
+            height: 494px;
+            margin-left: 10px;
+            padding-left: 10px;
+        }
+        
+        .ig-2 {
+            width: 99%;
+            height: 70%;
+        }
+        
+        .bing-1 {
+            width: 99.5%;
+            height: 99.5%;
+        }
+        
+        .p-txt-1 {
+            text-align: center;
+        }
+        
+        .btn {
+            border: 1px solid #e8e8e1;
+            display: inline-block;
+            margin-left: 160px;
+        }
+        
+        .div-7 {
+            width: 100%;
+            height: 497px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .div-8 {
+            width: 100%;
+            height: 500px;
+            background-color: #e6e6e6;
+        }
+        
+        .last-line {
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .last-div-1 {
+            width: 100%;
+            height: 57%;
+            display: grid;
+            grid-template-columns: 40% 60%;
+        }
+        
+        .last-div-2 {
+            width: 100%;
+            height: 20%;
+        }
+        
+        .last-img {
+            width: 248px;
+            height: 104px;
+            margin-top: 20px;
+            margin-left: 40%;
+        }
+        
+        .grid {
+            /* border: 1px solid rgb(47, 0, 255); */
+            margin-left: 30px;
+            margin-top: 42px;
+        }
+        
+        .last-ul {
+            display: grid;
+            grid-template-columns: 48% 48%;
+            list-style: none;
+            margin-bottom: 20px;
+        }
+        
+        .last-li {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+        
+        .last-p {
+            margin-left: 39px;
+        }
+        
+        .last-input-1 {
+            width: 318px;
+            height: 31px;
+            margin-left: 30px;
+            color: white;
+            background-color: black;
+            font-size: 15px;
+            margin-top: 15px;
+        }
+        
+        .last-p-1 {
+            height: 31px;
+            margin-left: 30px;
+            font-size: 15px;
+            margin-top: 15px;
+            width: 318px;
+        }
+        
+        .lst {
+            text-align: center;
+        }
+        
+        #lst-id {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar with img icon -->
+
+    <div class="div">
+        <nav class="navbar-2">
+            <ul class="nav-ui-1">
+                <li class="nav-2-li">
+
+                    <a href="cart.html" class="nav-text">
+                        <img src="https://cdn.icon-icons.com/icons2/2582/PNG/512/shopping_bag_icon_153998.png" alt="" class="img" width="50" height="45">
+                    </a>
+                </li>
+
+                <li class="nav-2-li">
+                    <a href="login.html" class="nav-text">
+                        <img src="https://cdn.pixabay.com/photo/2017/11/10/05/48/user-2935527_1280.png" alt="" class="img" width="50" height="45">
+                    </a>
+                </li>
+
+                <li class="nav-2-li">-
+                    <a href="surch.html" class="nav-text">
+                        <img src="https://cdn1.iconfinder.com/data/icons/hawcons/32/698956-icon-111-search-512.png" alt="" class="img" width="50" height="45">
+                    </a>
+                </li>
+
+                <li class="nav-2-li">
+                    <a href="home.html" class="nav-text">
+                        <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/BLUEFLY-LOGO-11-20.png?v=1574278243" alt="" class="img" id="icon" width="200" height="36.66">
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+    </div><br>
+
+    <!-- 2-Navbar with 10 diffrent product -->
+
+    <div class="div">
+        <nav class="navbar-1 ">
+            <ul class="nav-ul">
+                <li class="nav-list ">
+                    <a class="nav-text " href=" ">SHOES</a>
+                </li>
+
+                <li class="nav-list ">
+                    <a class="nav-text " href=" ">HANDBAGS & ACCESSORIES</a>
+                </li>
+
+                <li class="nav-list ">
+                    <a class="nav-text " href=" ">DESIGNERS</a>
+                </li>
+
+                <li class="nav-list ">
+                    <a class="nav-text " href=" ">WOMEN</a>
+                </li>
+
+                <li class="nav-list ">
+                    <a class="nav-text " href=" ">MEN</a>
+                </li>
+
+                <li class="nav-list ">
+                    <a class="nav-text " href=" ">SUNGLASSES</a>
+                </li>
+
+                <li class="nav-list ">
+                    <a class="nav-text " href=" ">JEWELRY & WATCHES</a>
+                </li>
+
+                <li class="nav-list ">
+                    <a class="nav-text " href=" ">UNDER &#36 50</a>
+                </li>
+
+                <li class="nav-list ">
+                    <a class="nav-text " href=" ">BEAUTY</a>
+                </li>
+
+                <li class="nav-list ">
+                    <a class="nav-text txt-clr-1" id="txt-clr" href=" ">CLEARANCE</a>
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+
+    <!-- 1-div with Welcome massage -->
+
+    <div class="div-1">
+        <p class="para">
+            WELCOME TO BLUEFLY : Luxury brands at discounted prices
+        </p>
+    </div>
+
+    <!-- 2-div with First Big Img -->
+
+    <div class="div-img">
+        <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/saint_laurent_3_2808x.jpg?v=1630508580%202808w" alt="" class="img-2" width="1420" height="663">
+    </div>
+    <!-- 3-div with text content about bluefly  -->
+    <div class="div-text">
+        <p class="h-txt">
+            Bluefly is the fashion destination for the style obsessed. Shop thousands of luxury brands & hundreds of thousands of styles at a great discount.
+        </p>
+    </div>
+    <hr class="line">
+    <!-- 4-div with heading tag -->
+    <div class="div-4-heading">
+        <h2 class="heading-txt">
+            SHOP BY CATEGORY
+        </h2>
+    </div>
+    <!-- div-5 shoping category with 10 img using flex-->
+
+    <div class="div-5-shoping">
+
+        <a href="" class="div-5-link">
+            <div class="category">
+                <div class="din-5-img">
+                    <img class="category div-5-img1" src="https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1411855298_RLLZ_1_720x.jpg?v=1642391548%20720w%20900h, " alt=" ">
+                </div>
+                <div class="div-5-txt ">
+                    DRESSES
+                </div>
+            </div>
+        </a>
+
+
+        <a href=" " class="div-5-link ">
+            <div class="category ">
+                <div class="din-5-img ">
+                    <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1313163286_RLLZ_1_180x.jpg?v=1641638555%20180w%20225h," alt="" class="category div-5-img1">
+                </div>
+                <div class="div-5-txt ">
+                    PUMPS & HEELS
+                </div>
+            </div>
+        </a>
+
+        <a href=" " class="div-5-link ">
+            <div class="category ">
+                <div class="din-5-img ">
+                    <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/products/2029931_778f4d4a-3b7f-4353-a7d6-67546a2c78ea_180x.jpg?v=1640193847%20180w%20180h," alt="" class="category div-5-img1">
+                </div>
+                <div class="div-5-txt ">
+                    HANDBAGS
+                </div>
+            </div>
+        </a>
+
+
+        <a href=" " class="div-5-link ">
+            <div class="category ">
+                <div class="din-5-img ">
+                    <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/products/FF0323S-FT3FQ-1_1728x.jpg?v=1629991293%201728w%20692h" alt="" class="category div-5-img1">
+                </div>
+                <div class="div-5-txt ">
+                    SUNGLASSES
+                </div>
+            </div>
+        </a>
+
+
+        <a href=" " class="div-5-link ">
+            <div class="category ">
+                <div class="din-5-img ">
+                    <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/products/x2ugLYSmPq9Ek9AwaFQ1gLdLPkDFhbWi-25_1080x.jpg?v=1641647003%201080w%201080h," alt="" class="category div-5-img1">
+                </div>
+                <div class="div-5-txt ">
+                    WOMEN'S SNEAKERS
+                </div>
+            </div>
+        </a>
+
+
+        <a href=" " class="div-5-link ">
+            <div class="category ">
+                <div class="din-5-img ">
+                    <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1312121653_RLLZ_1_180x.jpg?v=1642590225%20180w%20225h," alt="" class="category div-5-img1">
+
+                </div>
+                <div class="div-5-txt ">
+                    MEN'S SNEAKERS
+                </div>
+            </div>
+        </a>
+
+
+        <a href=" " class="div-5-link ">
+            <div class="category ">
+                <div class="din-5-img ">
+                    <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1875368_180x.jpg?v=1637879532%20180w%20180h," alt="" class="category div-5-img1">
+                </div>
+                <div class="div-5-txt ">
+                    MEN'S T-SHIRTS
+
+                </div>
+            </div>
+        </a>
+
+
+        <a href=" " class="div-5-link ">
+            <div class="category ">
+                <div class="din-5-img ">
+                    <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/products/2083294_360x.jpg?v=1638543723%20360w%20540h," alt="" class="category div-5-img1">
+                </div>
+                <div class="div-5-txt ">
+                    WOMEN'S TOPS
+                </div>
+            </div>
+        </a>
+
+
+        <a href=" " class="div-5-link ">
+            <div class="category ">
+                <div class="din-5-img ">
+                    <img src="https://i.pinimg.com/564x/a6/97/ca/a697ca390193bff0c9d7f8bb3aa69087.jpg" alt="" class="category div-5-img1">
+                </div>
+                <div class="div-5-txt ">
+                    WOMEN'S DENIM
+                </div>
+            </div>
+        </a>
+
+
+        <a href=" " class="div-5-link ">
+            <div class="category ">
+                <div class="din-5-img ">
+                    <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/products/pd87126-1_624b0193-d201-4b2e-a523-cfc5df6ea32c_900x.jpg?v=1641891457%20900w%20900h," alt="" class="category div-5-img1">
+                </div>
+                <div class="div-5-txt ">
+                    JEWELRY
+                </div>
+            </div>
+        </a>
+
+
+
+    </div>
+    <!-- Div-6 with 3 img -->
+    <div class="div-6">
+
+        <div class="bg-img" id="bg-1">
+
+        </div>
+        <div class="bg-img" id="bg-2"></div>
+        <div class="bg-img" id="bg-3"></div>
+
+    </div>
+    <hr class="line">
+    <div class="new">
+        <h2 class="div-new-txt">
+            NEW ARRIVALS
+        </h2>
+        <a href="" class="div-new-txt" id="link-1">
+            VIEW ALL
+        </a>
+    </div>
+    <!-- Shopin view with 5 imges ith Dollar Prize -->
+
+    <div class="div-5-shoping">
+        <a href=" " class="div-5-link ">
+            <div class="category ">
+                <div class="din-5-img ">
+                    <img src="//cdn.shopify.com/s/files/1/0248/3473/6191/products/1566289_360x.png?v=1635615949 360w 540h,
+                    " alt="" class="category div-5-img1 img1 div-5-img2">
+
+                </div>
+                <div class="div-5-txt ">
+                    <p>
+                        "DIVA!" T-SHIRT
+                    </p>
+                    <p id="p">
+                        <del>&#36 730</del> from &#36 440.03 <span style="color: red;">Save 40&#37</span>
+                    </p>
+                </div>
+            </div>
+        </a>
+
+
+        <a href=" " class="div-5-link ">
+            <div class="category ">
+                <div class="din-5-img ">
+                    <img src=" //cdn.shopify.com/s/files/1/0248/3473/6191/products/2091004_360x.jpg?v=1638723550 360w 540h," alt="" class="category div-5-img1 img1 div-5-img2">
+                </div>
+                <div class="div-5-txt ">
+                    <p>
+                        'FENDI FORCE' LEATHER ANKLE BOOTS
+                    </p>
+                    <p id="p">
+                        <del>&#36 1580</del> from &#36 1055.10 <span style="color: red;">Save 33&#37</span>
+                    </p>
+
+                </div>
+            </div>
+        </a>
+
+
+        <a href=" " class="div-5-link ">
+            <div class="category ">
+                <div class="din-5-img ">
+                    <img src="  //cdn.shopify.com/s/files/1/0248/3473/6191/products/2087946_360x.jpg?v=1638291787 360w 540h" alt="" class="category div-5-img1 img1 div-5-img2">
+                </div>
+                <div class="div-5-txt ">
+                    <p>
+                        'FOR RIDING' RAINBOOTS
+                    </p>
+                    <p id="p">
+                        <del>&#36 498</del> from &#36 389.63 <span style="color: red;">Save 22&#37</span>
+                    </p>
+                </div>
+            </div>
+        </a>
+
+
+        <a href=" " class="div-5-link ">
+            <div class="category ">
+                <div class="din-5-img ">
+                    <img src="  //cdn.shopify.com/s/files/1/0248/3473/6191/products/1497478_c6df9f3a-0859-45b1-b08c-6f3c50cf94e7_360x.jpg?v=1637933323 360w 360h," alt="" class="category div-5-img1 img1 div-5-img2">
+                </div>
+                <div class="div-5-txt ">
+                    <p>
+                        00M50 HANDBAG
+                    </p>
+                    <p id="p">
+                        <del>&#36 996</del> from &#36 682.26 <span style="color: red;">Save 32&#37</span>
+                    </p>
+                </div>
+            </div>
+        </a>
+
+
+        <a href=" " class="div-5-link ">
+            <div class="category ">
+                <div class="din-5-img ">
+                    <img src="  //cdn.shopify.com/s/files/1/0248/3473/6191/products/1622881_540x.jpg?v=1635400800 540w 810h," alt="" class="category div-5-img1 div-5-img2">
+                </div>
+                <div class="div-5-txt ">
+                    <p>
+
+                        "SOUND ENGINEER" BELTPACK
+                    </p>
+                    <p id="p">
+                        <del>&#36 836</del> from &#36 579.75<span style="color: red;"> Save 31&#37</span>
+                    </p>
+                </div>
+            </div>
+        </a>
+
+
+
+    </div>
+    <!-- div-6 for 2nd big image layout -->
+    <div class="div-img div-6-img-2">
+        <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/gucci_2808x.jpg?v=1630503443" alt="" class="img-2" width="1420" height="663">
+    </div>
+    <div class="new">
+        <h2 class="div-new-txt">
+            TRENDING NOW
+        </h2>
+        <!-- <a href="" class="div-new-txt" id="link-1">
+            VIEW ALL
+        </a> -->
+    </div>
+    <div class="div-5-shoping">
+
+
+        <a href=" " class="div-5-link ">
+            <div class="category ">
+                <div class="din-5-img ">
+                    <img src=" //cdn.shopify.com/s/files/1/0248/3473/6191/products/1311478894_RLLZ_1_360x.jpg?v=1642550256 360w 450h," alt="" class="category div-5-img1 img1 div-5-img2 div-7-img3">
+
+                </div>
+                <div class="div-5-txt ">
+                    <p>
+                        STUART WEITZMAN REDDY 5050 LEATHER OVER-THE-KNEE BOOT
+                    </p>
+                    <p id="p">
+                        <del>&#36 509</del> from &#36 299.99 <span style="color: red;"> Save 41&#37</span>
+                    </p>
+                </div>
+            </div>
+        </a>
+
+
+        <a href=" " class="div-5-link ">
+            <div class="category ">
+                <div class="din-5-img ">
+                    <img src="  //cdn.shopify.com/s/files/1/0248/3473/6191/products/GG0053S-001-1_540x.jpg?v=1607630190 540w 224h," alt="" class="category div-5-img1 img1 div-5-img2 div-7-img3">
+                </div>
+                <div class="div-5-txt ">
+                    <p>
+                        GUCCI SQUARE SUNGLASSES GG0053S 001 BLACK 54MM 0053
+                    </p>
+                    <p id="p">
+                        <!-- <del>&#36 1580</del> from &#36 1055.10 <span style="color: red;">Save 33&#37</span> -->
+                        &#36 337.50
+                    </p>
+
+                </div>
+            </div>
+        </a>
+
+
+        <a href=" " class="div-5-link ">
+            <div class="category ">
+                <div class="din-5-img ">
+                    <img src="  //cdn.shopify.com/s/files/1/0248/3473/6191/products/wtlliMyyv3hcuS7RGVS0VZojPouPYfsw-25_540x.jpg?v=1607399172 540w 540h," alt="" class="category div-5-img1 img1 div-5-img2 div-7-img3 ">
+                </div>
+                <div class="div-5-txt ">
+                    <p>
+                        ROXY WOMENS DOWN WINTER PUFFER COAT
+                    </p>
+                    <p id="p ">
+                        <del>&#36 499</del> from &#36 248.98 <span style="color: red; "> Save 50&#37</span>
+                    </p>
+                </div>
+            </div>
+        </a>
+
+
+        <a href=" " class="div-5-link ">
+            <div class="category ">
+                <div class="din-5-img ">
+                    <img src="   //cdn.shopify.com/s/files/1/0248/3473/6191/products/8f593ac8-3f8b-43c7-a514-44cceecabe50_540x.jpg?v=1627405644 540w 540h," alt=" " class="category div-5-img1 img1 div-5-img2 div-7-img3 ">
+                </div>
+                <div class="div-5-txt ">
+                    <p>
+                        BURBERRY YELLOW BURBERRY VINTAGE CHECK HIGH-TOP SNEAKERS
+                    </p>
+                    <p id="p ">
+                        <del>&#36 580</del> from &#36 369.75 <span style="color: red; "> Save 40&#37</span>
+                    </p>
+                </div>
+            </div>
+        </a>
+
+
+        <a href=" " class="div-5-link ">
+            <div class="category ">
+                <div class="din-5-img ">
+                    <img src=" //cdn.shopify.com/s/files/1/0248/3473/6191/products/1311726896_RLLZ_1_540x.jpg?v=1642648648 540w 675h," alt=" " class="category div-5-img1 div-5-img2 div-7-img3 ">
+                </div>
+                <div class="div-5-txt ">
+                    <p>
+
+                        STUART WEITZMAN KEELAN LEATHER BOOT
+                    </p>
+                    <p id="p ">
+                        <del>&#36 695</del> from &#36 349.99<span style="color: red; "> Save 65&#37</span>
+                    </p>
+                </div>
+            </div>
+        </a>
+
+        <a href=" " class="div-5-link ">
+            <div class="category ">
+                <div class="din-5-img ">
+                    <img src="  //cdn.shopify.com/s/files/1/0248/3473/6191/products/1311930311_RLLZ_1_540x.jpg?v=1642650391 540w 675h," alt=" " class="category div-5-img1 div-5-img2 div-7-img3 ">
+                </div>
+                <div class="div-5-txt ">
+                    <p>
+                        STUART WEITZMAN LOWLAND SUEDE OVER-THE-KNEE BOOT
+                    </p>
+                    <p id="p ">
+                        <del>&#36 798</del> from &#36 379.99<span style="color: red; "> Save 52&#37</span>
+                    </p>
+                </div>
+            </div>
+        </a>
+
+        <a href=" " class="div-5-link ">
+            <div class="category ">
+                <div class="din-5-img ">
+                    <img src="   //cdn.shopify.com/s/files/1/0248/3473/6191/products/1311726855_RLLZ_1_540x.jpg?v=1641646938 540w 675h," alt=" " class="category div-5-img1 div-5-img2 div-7-img3 ">
+                </div>
+                <div class="div-5-txt ">
+                    <p>
+
+                        STUART WEITZMAN LOWLAND SUEDE OVER-THE-KNEE BOOT
+                    </p>
+                    <p id="p ">
+                        <del>&#36 795</del> from &#36 357.99<span style="color: red; "> Save 8&#37</span>
+                    </p>
+                </div>
+            </div>
+        </a>
+
+        <a href=" " class="div-5-link ">
+            <div class="category ">
+                <div class="din-5-img ">
+                    <img src="//cdn.shopify.com/s/files/1/0248/3473/6191/products/1311784215_RLLZ_1_540x.jpg?v=1642656043 540w 675h," alt=" " class="category div-5-img1 div-5-img2 div-7-img3 ">
+                </div>
+                <div class="div-5-txt ">
+                    <p>
+
+                        STUART WEITZMAN GILLIAN 60 LEATHER BOOT
+                    </p>
+                    <p id="p ">
+                        <del>&#36 675</del> from &#36 329.99<span style="color: red; "> Save 60&#37</span>
+                    </p>
+                </div>
+            </div>
+        </a>
+
+        <a href=" " class="div-5-link ">
+            <div class="category ">
+                <div class="din-5-img ">
+                    <img src="  //cdn.shopify.com/s/files/1/0248/3473/6191/products/1311946564_RLLZ_1_540x.jpg?v=1642522627 540w 675h," alt=" " class="category div-5-img1 div-5-img2 div-7-img3 ">
+                </div>
+                <div class="div-5-txt ">
+                    <p>
+
+                        STUART WEITZMAN LAINE SUEDE COMBAT BOOT
+                    </p>
+                    <p id="p ">
+                        <del>&#36 430</del> from &#36 279.99<span style="color: red; "> Save 54&#37</span>
+                    </p>
+                </div>
+            </div>
+        </a>
+
+        <a href=" " class="div-5-link ">
+            <div class="category ">
+                <div class="din-5-img ">
+                    <img src="  //cdn.shopify.com/s/files/1/0248/3473/6191/products/1311313221_RLLZ_1_540x.jpg?v=1642648996 540w 675h," alt=" " class="category div-5-img1 div-5-img2 div-7-img3 ">
+                </div>
+                <div class="div-5-txt ">
+                    <p>
+
+                        STUART WEITZMAN GILLIAN 60 SUEDE BOOT
+                    </p>
+                    <p id="p ">
+                        <del>&#36 795</del> from &#36 349.99<span style="color: red; ">Save 68&#37</span>
+                    </p>
+                </div>
+            </div>
+        </a>
+
+
+
+
+    </div>
+    <div class="new">
+        <!-- <h2 class="div-new-txt">
+            TRENDING NOW
+        </h2> -->
+        <a href="" class="div-new-txt" id="link-2">
+            VIEW ALL
+        </a>
+        <hr class="line">
+    </div>
+    <div class="div-7">
+
+        <div class="bg-img-1 " id="bg-4 ">
+            <div class="ig-2 ">
+                <img src="//cdn.shopify.com/s/files/1/0248/3473/6191/files/denim_900x.jpg?v=1615204984 900w 860h, " alt=" " class="bing-1 ">
+            </div>
+            <div class="xt-1 ">
+                <h3 class="h3-txt p-txt-1 ">
+                    UP TO 85% OFF THE DENIM SHOP FOR HIM & HER
+                </h3>
+                <p class="p-txt-1 ">
+                    From Hudson Jeans, Joe's Jeans, J Brand & More
+                </p>
+                <a href=" " class="btn ">
+                    SHOP DENIM
+                </a>
+            </div>
+
+        </div>
+        <div class="bg-img-1 " id="bg-5 ">
+            <div class="ig-2 ">
+                <img src="//cdn.shopify.com/s/files/1/0248/3473/6191/files/lightweight_jackets_720x.jpg?v=1630509164 720w 480h, " alt=" " class="bing-1 ">
+            </div>
+            <div class="xt-1 ">
+                <h3 class="h3-txt p-txt-1 ">
+                    UP TO 80% OFF LIGHTWEIGHT JACKETS & COATS
+                </h3>
+                <p class="p-txt-1 ">
+                    Must-Haves From Cole Haan, Burberry, & More
+                </p>
+                <a href=" " class="btn ">
+                    SHOP OUTERWEAR
+                </a>
+            </div>
+        </div>
+        <div class="bg-img-1 " id="bg-6 ">
+            <div class="ig-2 ">
+                <img src="//cdn.shopify.com/s/files/1/0248/3473/6191/files/accesories_720x.jpg?v=1630509636 720w 477h, " alt=" " class="bing-1 ">
+            </div>
+            <div class="xt-1 ">
+                <h3 class="h3-txt p-txt-1 ">
+                    UP TO 90% OFF WOMEN'S MUST-HAVE ACCESSORIES
+                </h3>
+                <p class="p-txt-1 ">
+                    Shop Wallets, Belts, Hats, Sunglasses & More
+                </p>
+                <a href=" " class="btn ">
+                    SHOP WOMEN'S ACCESSORIES
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <div class="div-8">
+        <div class="last-div-1">
+            <div class="grid">
+                <p class="last-p">
+                    ABOUT US
+                </p>
+                <ul class="last-ul">
+                    <li class="last-li">Contact Us </li>
+                    <li class="last-li">Frequently Asked Questions</li>
+                    <li class="last-li"> Shipping & Returns</li>
+                    <li class="last-li">Gift Cards</li>
+                    <li class="last-li">Pre-Owned Guide </li>
+                    <li class="last-li">Sell on Bluefly</li>
+                    <li class="last-li"> Privacy Policy</li>
+                    <li class="last-li">Terms & Conditions</li>
+                </ul>
+
+            </div>
+            <div class="grid">
+                <p class="last-p-1">
+                    SIGN UP AND SAVE
+                </p>
+                <p class="last-p-1">
+                    Subscribe to get exclusive offers on designer brands
+                </p>
+                <input class="last-p-1 lst" type=" text " class="last-input " placeholder="Enter your email "><br>
+                <input class="last-p-1 lst" id="lst-id" type=" submit " class="last-input-1 " value="Subscribe ">
+            </div>
+
+        </div>
+        <div clss="last-div-2 ">
+            <img class="last-img " src=" //cdn.shopify.com/s/files/1/0248/3473/6191/files/Untitled_2_.png_5_x104@2x.png?v=1620852820 " alt="Bluefly ">
+        </div>
+        <div clss="last-div-3 ">
+            <p class="last-line ">
+                © 2022 Bluefly 1998-2020 BLUEFLY.COM OR ITS AFFILIATES ALL RIGHTS RESERVED.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
+
+</html>
