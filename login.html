@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h1 {
+            text-align: center;
+            padding-top: 15px;
+            font-family: Tiemann, serif;
+            font-weight: 400;
+            letter-spacing: 0;
+            line-height: 1;
+            text-transform: uppercase
+        }
+        
+        .login-box {
+            width: 360px;
+            height: 280px;
+            margin: auto;
+            border-radius: 3px;
+            background-color: white;
+        }
+        
+        .label {
+            display: flex;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        
+        .input {
+            width: 100%;
+            padding: 16px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            /* border-radius: 6px; */
+            outline: none;
+        }
+        
+        input[type="submit"] {
+            width: 397px;
+            height: 56px;
+            margin-top: 20px;
+            border: none;
+            background-color: #111111;
+            color: white;
+            font-size: 18px;
+        }
+        
+        p,
+        a {
+            text-align: center;
+            padding-top: 63px;
+            font-size: 20px;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-box">
+        <h1>Login</h1>
+        <form>
+            <label class="label">Email</label>
+            <input class="input" id="email" type="text" placeholder="" />
+
+            <label class="label">Password</label>
+            <input class="input" id="pass" type="text" placeholder="" />
+
+            <input class="input" type="submit" value="SIGN IN" />
+        </form>
+    </div>
+    <p class="para-2">
+        <a href="signUp.html">Create account</a>
+    </p>
+</body>
+
+</html>
+<script>
+    // JavaScript Side for login pagr
+
+
+
+    document.querySelector("form").addEventListener("submit", signin);
+
+    var regdUsers = JSON.parse(localStorage.getItem("userDataBase"));
+
+    function signin(event) {
+
+        event.preventDefault();
+        console.log(regdUsers.length)
+        var email = document.querySelector("#email").value;
+        var pass = document.querySelector("#pass").value;
+        var flag = 0;
+        for (var i = 0; i < regdUsers.length; i++) {
+
+            console.log(regdUsers[i].userName, regdUsers[i].password);
+
+            if (regdUsers[i].userName == email && regdUsers[i].password == pass) {
+                flag = 1;
+                break;
+
+            }
+
+        }
+        if (flag == 1) {
+            alert("SiggIn Successfully");
+            window.location.href = "home.html";
+        } else {
+            alert("Your Details are wrong");
+            // break;
+        }
+    }
+</script>

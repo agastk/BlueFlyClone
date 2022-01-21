@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body {
+            background-color: white;
+            /* font-family: "Roboto", sans-serif; */
+        }
+        
+        .signup-box {
+            width: 360px;
+            height: 620px;
+            margin: auto;
+            /* background-color: white; */
+            border-radius: 3px;
+        }
+        
+        h1 {
+            text-align: center;
+            padding-top: 15px;
+            font-family: Tiemann, serif;
+            font-weight: 400;
+            letter-spacing: 0;
+            line-height: 1;
+            text-transform: uppercase
+        }
+        
+        h4 {
+            text-align: center;
+        }
+        
+        .label {
+            display: flex;
+            /* margin-top: 20px; */
+            padding-bottom: 16px;
+            font-size: 18px;
+            margin: 0px 0px 10px;
+        }
+        
+        .input {
+            width: 100%;
+            padding: 16px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            /* border-radius: 6px; */
+            outline: none;
+        }
+        
+        .input[type="submit"] {
+            width: 394px;
+            height: 56px;
+            margin-top: 20px;
+            border: none;
+            background-color: #111111;
+            color: white;
+            font-size: 18px;
+        }
+        
+        .labe {
+            font-size: small;
+            margin: auto;
+            padding: auto;
+        }
+    </style>
+</head>
+
+<div class="signup-box">
+    <h1>CREATE ACCOUNT</h1>
+    <form>
+        <label clsss="label">First Name</label>
+        <input id="name" class="input" type="text" placeholder="" />
+
+        <label clsss="label">Last Name</label>
+        <input id="lname" class="input" type="text" placeholder="" />
+
+        <label clsss="label">Email</label>
+        <input id="email" class="input" type="text" placeholder="" />
+
+        <label clsss="label">Password</label>
+        <input id="pass" class="input" type="text" placeholder="" />
+
+        <input id="pass" class="labe" type="checkbox" placeholder="" />
+        <label clsss="labe"> Subscribe to stay  with updated new offers!</label>
+
+        <input class="input" type="submit" value="CREATE" />
+    </form>
+</div>
+</body>
+
+</html>
+
+<script>
+    document.querySelector("form").addEventListener("submit", formSubmit);
+    var userStack = JSON.parse(localStorage.getItem("userDataBase")) || [];
+
+    function formSubmit(event) {
+        event.preventDefault();
+        var name = document.querySelector("#name").value;
+        var lname = document.querySelector("#lname").value;
+        var email = document.querySelector("#email").value;
+        var pass = document.querySelector("#pass").value;
+
+        console.log(name, lname, email, pass)
+        var userData = {
+            firstnName: name,
+            lastName: lname,
+            userName: email,
+            password: pass,
+        };
+        if (name && lname && email && pass) {
+            userStack.push(userData);
+            localStorage.setItem("userDataBase", JSON.stringify(userStack));
+            alert("Your Account Created  successfully");
+            window.location.href = "login.html";
+        } else {
+            alert('Please fill the form correctly.')
+        }
+    }
+</script>
